@@ -35,7 +35,7 @@ jobs:
       OS_VERSION: ubuntu-22.04
     steps:
     - name: Download artifacts
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v5
 
     - name: Extract tarball
       run: tar xzf ./artifact/${{ inputs.tarball }}
@@ -77,7 +77,7 @@ jobs:
     runs-on: ${{ fromJSON(inputs.runs-on-test) }}
     steps:
     - name: Download artifacts
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v5
       with:
         name: artifacts-${{ inputs.tee }}
 

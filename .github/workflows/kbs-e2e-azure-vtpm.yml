@@ -34,7 +34,7 @@ jobs:
     needs: authorize
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         fetch-depth: 0
         # fetch main on push, otherwise the head of the PR

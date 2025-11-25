@@ -31,7 +31,7 @@ jobs:
       GRPC_TEE_ENUM: ${{ matrix.grpc_tee_enum }}
       RESTFUL_TEE_ENUM: ${{ matrix.restful_tee_enum }}
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
     - name: Install Rust toolchain
       uses: actions-rust-lang/setup-rust-toolchain@v1
